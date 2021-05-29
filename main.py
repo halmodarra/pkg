@@ -1,0 +1,133 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The max value = 5\n",
+      "The min value = -3\n",
+      "The max squared value = 25\n",
+      "The length of the list = 7\n",
+      "The total of all positive numbers in the list = 15\n",
+      "The Negative numbers count in the list =  2\n",
+      "The even numbers in the list =   [-2, 4, 2]\n",
+      "The total of all the numbers in the list = 10\n"
+     ]
+    }
+   ],
+   "source": [
+    "class NewClass:\n",
+    "    def __init__(self, ls = [1,3,5,-3,-2,4,2]):\n",
+    "        self.ls = ls\n",
+    "      \n",
+    "    # Return the Maximum value in the list\n",
+    "    def return_max(list):\n",
+    "        max = list[0]\n",
+    "        for a in list:\n",
+    "            if a > max:\n",
+    "                max = a\n",
+    "        return max\n",
+    "\n",
+    "    print('The max value =',return_max(ls))\n",
+    "    \n",
+    "    # Return the minimum value in the list\n",
+    "    def return_min(list):\n",
+    "        min = list[0]\n",
+    "        for a in list:\n",
+    "            if a < min:\n",
+    "                min = a\n",
+    "        return min\n",
+    "\n",
+    "    print('The min value =',return_min(ls))\n",
+    "    \n",
+    "    # Return the max value squared\n",
+    "    def return_max_squared(list):\n",
+    "        max = list[0]\n",
+    "        for a in list:\n",
+    "            if a > max:\n",
+    "                max = a\n",
+    "        return max**2\n",
+    "\n",
+    "    print('The max squared value =', return_max_squared(ls))\n",
+    "    \n",
+    "    # Return length of the list:\n",
+    "    def return_length(list):\n",
+    "        testList = ls\n",
+    "        return len\n",
+    "    print('The length of the list =', len(ls))\n",
+    "\n",
+    "    # Return the sum of all positive numbers only\n",
+    "    def return_positive_sum(list):\n",
+    "        positive = 0 \n",
+    "        for x in list:\n",
+    "            if x > 0:\n",
+    "                positive = positive + x\n",
+    "        return positive\n",
+    "    print('The total of all positive numbers in the list =', return_positive_sum(ls))\n",
+    "    \n",
+    "    \n",
+    "    # Return the count of all negative numbers (How many negative numbers are in the list)\n",
+    "    def return_negative_count(list):\n",
+    "        pos_count =  0 \n",
+    "        neg_count =  0\n",
+    "        for num in list:\n",
+    "            if num >= 0:\n",
+    "                pos_count += 1\n",
+    "            else:\n",
+    "                neg_count += 1\n",
+    "        return neg_count    \n",
+    "    print(\"The Negative numbers count in the list = \", return_negative_count(ls))\n",
+    "\n",
+    "    # Return the list of all even numbers in the list\n",
+    "    def even_num(list):\n",
+    "        even = []\n",
+    "        for n in list:\n",
+    "            if n % 2 == 0:\n",
+    "                even.append(n)\n",
+    "        return even\n",
+    "    print(\"The even numbers in the list =  \", even_num(ls))\n",
+    " \n",
+    "    # Return the sum of all numbers in the list\n",
+    "    def sum_all_number(ls):\n",
+    "        total = 0\n",
+    "        for x in ls:\n",
+    "            total += x\n",
+    "        return total\n",
+    "    print(\"The total of all the numbers in the list =\", sum_all_number(ls)) \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
